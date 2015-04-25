@@ -1,0 +1,59 @@
+# Credits
+powered_by_url: "http://jekyllrb.com"
+powered_by: Jekyll
+
+hosted_by_url: "https://pages.github.com"
+hosted_by: Github Pages
+
+# Webmaster Info
+email: ryan@ryan-alex.com
+author: Ryan Alexander
+exerienceLevel: Entry Level 
+
+twitter_username: ryanalexander
+github_username:  mrryanalexander
+linkedin_username: ryanalexanderp
+
+# Site Info
+title: Ryan-Alex.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is my computer engineering website to share my 
+  programming projects with the rest of the community. I write in
+  Objective-C, Javascript, Python, Java, C, Golang, PHP, Bash, 
+  HTML, CSS, SCSS and I learn new languages all of the time. 
+footerDesc: This site was created using "<a href=""
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ryan-alex.com" # the base hostname & protocol for your site
+
+# Markdown Settings
+markdown: kramdown
+
+# Collections
+collections:
+  info:
+   output: true
+
+collections:
+  subjects:
+   output: true
+
+# Default Settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Ryan Alexander"
+  -
+    scope:
+      path: "posts"
+      type: "posts" 
+    values:
+      layout: "post" 
+
+# Compression Settings
+sass:
+  style: :compressed
+
+

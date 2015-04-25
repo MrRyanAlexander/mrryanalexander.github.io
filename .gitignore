@@ -1,0 +1,5 @@
+.DS_Store
+/.sass_cache
+/_sass
+/_site
+Gemfile.lock
