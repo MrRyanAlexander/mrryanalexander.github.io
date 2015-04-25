@@ -1,0 +1,260 @@
+/**
+ * Reset some basic elements
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+    height: 100%;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    height: 100%;
+    width: 100%;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+/**
+ * Layout Modifiers
+ */
+
+.auto-margin {
+    margin: 0 auto;
+}
+.inline-list {
+    display: inline;
+}
+
+.left-margin-10 {
+    margin-left:10px;
+}
+.left-margin-20 {
+    margin-left:20px;
+}
+.left-margin-30 {
+    margin-left:30px;
+}
+.right-margin-10 {
+    margin-right:10px;
+}
+.right-margin-20 {
+    margin-right:20px;
+}
+.right-margin-30 {
+    margin-right:30px;
+}
+.top-border-2 {
+    border-style: solid;
+    border-top-width:2px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;;
+}
+.top-border-4 {
+    border-style: solid;
+    border-top-width:2px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;;
+}
+.top-border-8 {
+    border-style: solid;
+    border-top-width:2px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;;
+}
+.border-light-blue {
+    border-color: rgba(92, 110, 237, 0.47);
+}
+.pad-10 {
+    padding:10px;
+}
+.pad-20 {
+    padding:20px;
+}
+.pad-30 {
+    padding:30px;
+}
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 5px 10px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+.icon-big {
+    > svg {
+        width: 46px;
+        height: 46px;
+        background-color: rgb(107, 148, 255);
+        border-radius: 50%;
+        margin-bottom: 10px;
+        
+        &:hover {
+            background-color: rgb(181, 201, 253);
+        }
+    }
+}
+
+/**
+ * Animates 
+ */
+ .uppercase {
+    text-transform: uppercase;
+ }
