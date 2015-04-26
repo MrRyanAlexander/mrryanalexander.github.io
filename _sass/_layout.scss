@@ -102,11 +102,14 @@
                 font-size: 25px;
 
                 @include media-query($on-palm) {
-                    display: inline-flex;
+                    border-top: 1px solid #FFFFFF;
+                    margin: 0px 20px 0px 20px;
                 }
 
                 > li {
-                    padding: 10px;
+
+                    display: inline-block;
+                    padding: 3%;
                     border-top: 1px solid #FFFFFF;
                     > a {
                         color: #FFFFFF;
@@ -123,10 +126,11 @@
                     &:nth-child(5) {
                         border-bottom: 1px solid #FFFFFF;
                         @include media-query($on-palm) {
-                            border-bottom: 0px;
-                        }
+                          border-bottom: 0px;
+                        }  
                     }
                     @include media-query($on-palm) {
+                        border: 0px;
                         padding-top: 0px;
                     }
                 }
