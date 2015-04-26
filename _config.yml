@@ -8,7 +8,6 @@ hosted_by: Github Pages
 # Webmaster Info
 email: ryan@ryan-alex.com
 author: Ryan Alexander
-exerienceLevel: Entry Level 
 
 twitter_username: ryanalexander
 github_username:  mrryanalexander
@@ -30,11 +29,7 @@ markdown: kramdown
 
 # Collections
 collections:
-  info:
-   output: true
-
-collections:
-  subjects:
+  languages:
    output: true
 
 # Default Settings
@@ -47,10 +42,22 @@ defaults:
       author: "Ryan Alexander"
   -
     scope:
-      path: "posts"
+      path: ""
       type: "posts" 
     values:
-      layout: "post" 
+      layout: "post"
+  -
+    scope:
+      path: "languages"
+      type: "subjects" 
+    values:
+      layout: "project" 
+  -
+    scope:
+      path: ""
+      type: "drafts" 
+    values:
+      layout: "post"
 
 # Compression Settings
 sass:

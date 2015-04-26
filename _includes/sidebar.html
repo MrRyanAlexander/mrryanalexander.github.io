@@ -48,10 +48,8 @@
     <div class="sidebar-links">
       <div class="trigger">
         <ul class="left-margin-10">
-          {% for page in site.pages %}
-            {% if page.type == "subject" %}
+          {% for page in site.languages %}
               <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %}
           {% endfor %}
         </ul>
       </div>

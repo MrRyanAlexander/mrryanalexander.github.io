@@ -155,11 +155,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: #358AFC;
     }
 
     &:hover {
-        color: $text-color;
+        color: #347AD7;
     }
 }
 
@@ -234,7 +234,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: #FFFFFF;
         }
     }
 }
@@ -242,7 +242,7 @@ pre {
     > svg {
         width: 46px;
         height: 46px;
-        background-color: rgb(107, 148, 255);
+        background-color: #59A0FF;
         border-radius: 50%;
         margin-bottom: 10px;
         

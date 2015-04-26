@@ -13,6 +13,10 @@ div.div2{ background: #666; height: 100%; }
     width: 100%;
     position: fixed;
     background-color: black;
+
+    @include media-query($on-palm) {
+        text-align: center;
+    }
 }
 
 .site-title {
@@ -24,6 +28,11 @@ div.div2{ background: #666; height: 100%; }
     color: #ffffff;
     font-weight: 800;
     text-transform: uppercase;
+
+    @include media-query($on-palm) {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 .site-title:visited {
     color: #ffffff;
@@ -106,6 +115,15 @@ div.div2{ background: #666; height: 100%; }
     overflow-y: scroll;
     border-right: 1px solid black;
     background-color: rgb(53, 138, 252);
+
+    @include media-query($on-palm) {
+        float: none;
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 70px;
+        overflow-y: hidden;
+        padding-bottom: 40px;
+    }
 }
 .inner-sidebar {
     width: auto;
@@ -118,18 +136,30 @@ div.div2{ background: #666; height: 100%; }
 }
 .sidebar-media > img {
     border-radius: 50%;
+
+    @include media-query($on-palm) {
+        max-width: 50%;
+
+    }
 }
 .sidebar-links {
     width: auto;
     height: auto;
+
+    @include media-query($on-palm) {
+        text-align: center;
+    }    
 }
 .sidebar-links > div > ul {
     list-style-type: none;
     font-family: verdana;
     font-size: 25px;
+    @include media-query($on-palm) {
+        display: inline-flex;
+    }
 }
 .white-link {
-    color: #ffffff;
+    color: #FFFFFF;
     display: block;
     font-size: 24px;
     font-size: 2.3vw;
@@ -140,7 +170,7 @@ div.div2{ background: #666; height: 100%; }
     }
 
     &:visited {
-        color: #BEBBBB;
+        color: #FFFFFF;
     }
 }
 
@@ -149,7 +179,7 @@ div.div2{ background: #666; height: 100%; }
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: 5%;
     margin: 0 auto;
     text-align: center;
     font-weight: 400;
@@ -224,6 +254,11 @@ div.div2{ background: #666; height: 100%; }
     text-align: left;
     padding-bottom: 0%;
     overflow-y: scroll;
+
+    @include media-query($on-palm) {
+        overflow-y: visible;
+        width: 100%;
+    }
 }
 
 .page-heading {
@@ -236,6 +271,8 @@ div.div2{ background: #666; height: 100%; }
 
     > li {
         margin-bottom: $spacing-unit;
+        padding: 10px;
+        border: 1px solid rgb(53, 138, 252);
     }
 }
 
