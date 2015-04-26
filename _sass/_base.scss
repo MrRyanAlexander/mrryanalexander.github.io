@@ -1,7 +1,13 @@
 /**
+ * Set What Should Not Show to : NONE;
+ */
+applet, object, iframe, abbr, acronym, address, big, cite, del, dfn,  ins, kbd, q, s, samp, sub, sup, tt, var, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, canvas, details, embed, figure, figcaption, hgroup, menu, nav, output, ruby, summary, mark, audio, video {
+    display: none;
+}
+/**
  * Reset some basic elements
  */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, b, u, i, center, ol, ul, li, article, aside,footer, header, section, time, {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,19 +35,15 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * Images
@@ -49,17 +51,6 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
-}
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
 }
 
 /**
@@ -79,7 +70,7 @@ li {
 /**
  * Layout Modifiers
  */
-
+/*
 .auto-margin {
     margin: 0 auto;
 }
@@ -138,14 +129,14 @@ li {
 .pad-30 {
     padding:30px;
 }
+*/
+
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 600;
 }
-
-
 
 /**
  * Links
@@ -163,8 +154,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -180,8 +169,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -209,7 +196,6 @@ pre {
     }
 }
 
-
 /**
  * Clearfix
  */
@@ -225,27 +211,34 @@ pre {
 /**
  * Icons
  */
-.icon {
+.icon_big {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #59A0FF;
+        margin-bottom: 10px;
         path {
             fill: #FFFFFF;
         }
+        &:hover {
+            background-color: rgb(181, 201, 253);
+        }
     }
 }
-.icon-big {
+.icon_small {
+
     > svg {
-        width: 46px;
-        height: 46px;
-        background-color: #59A0FF;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
         border-radius: 50%;
-        margin-bottom: 10px;
-        
+        background-color: #59A0FF;
+        path {
+            fill: #FFFFFF;
+        }
         &:hover {
             background-color: rgb(181, 201, 253);
         }
@@ -253,8 +246,19 @@ pre {
 }
 
 /**
- * Animates 
+ * Responsive Helpers 
  */
- .uppercase {
-    text-transform: uppercase;
- }
+
+//hide on mobile
+.hide_mobile {
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+//show on mobile
+.show_mobile {
+    display: none;
+    @include media-query($on-palm) {
+        display: inherit;
+    }
+}

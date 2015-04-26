@@ -49,7 +49,7 @@ defaults:
   -
     scope:
       path: "languages"
-      type: "subjects" 
+      type: "languages" 
     values:
       layout: "project" 
   -
