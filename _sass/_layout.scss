@@ -107,10 +107,9 @@
                 }
 
                 > li {
-
-                    display: inline-block;
                     padding: 3%;
                     border-top: 1px solid #FFFFFF;
+
                     > a {
                         color: #FFFFFF;
                         font-size: 24px;
@@ -130,6 +129,7 @@
                         }  
                     }
                     @include media-query($on-palm) {
+                        display: inline-block;
                         border: 0px;
                         padding-top: 0px;
                     }
@@ -148,8 +148,6 @@
     height: calc(100% - 56px);
     margin-top: 56px;
     display: inline-block;
-    text-align: left;
-    padding-bottom: 0%;
     overflow-y: scroll;
 
     @include media-query($on-palm) {
@@ -167,10 +165,6 @@
 
     .page-heading {
         font-size: 20px;
-    }
-
-    .page-content {
-        
     }
 
  /***********
@@ -253,8 +247,8 @@
  * Footer
  */
 .footer {
-    border-top: 1px solid $grey-color-light;
-    padding: 5%;
+    border-top: 1px solid rgb(53, 138, 252);
+    padding-top: 1%;
     margin: 0 auto;
     text-align: center;
     font-weight: 400;
