@@ -12,7 +12,7 @@ To kick this off I need to install the Jekyll gem.
 gem install jekyll
 {% endhighlight %}
 
-I plan to deploy this project to my [ra_page][ra_page] git repo, so I'll go ahead and create a Gemfile as [recommended][recommended].
+I plan to deploy this project as my [github][ra_page].io page, so I'll go ahead and create a Gemfile as [recommended][recommended].
 
 {% highlight ruby %}
 source 'https://rubygems.org'
@@ -82,38 +82,14 @@ What is a layout without content? First, I want a list of links to pages for eac
 {% highlight html %}
 Created cloud.md
 ---
-layout: project
-title: Obj-C
-type: subject
----
-
-Added a category to 2015-04-22-creating-storyboard-contrains.markdown
----
-title:  "Creating UIStoryboard constraints"
+title: "Customizing this Jekyll Site"
 date:   2015-04-22 20:54:11
-category: Obj-C
+level: "Mid Level"
+tags: "Html"
 ---
-
-Finally I updated the sidebar.html
-<div class="sidebar-links">
-      <div class="trigger">
-        <ul class="left-margin-10">
-          <!-- for page in site.pages -->
-            <!-- if page.type == "subject" --> 
-              <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="">Cloud</a></li>
-              <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="">Go</a></li>
-              <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="">Javascript</a></li>
-              <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="">Obj-C</a></li>
-              <li class="top-border-2 pad-10 border-light-blue"><a class="page-link white-link" href="">Python</a></li>
-            <!-- endif -->
-          <!-- endfor -->
-        </ul>
-      </div>
-    </div>
-  </div>
 {% endhighlight %}
 
-Now that is kinda cool. When I click on one of the sidebar links, a page is loaded containing a list of page links matching the page.type
+Now that is kinda cool. Jekyl can see the pages I created for each language. When I click on one of the sidebar links, a page is loaded containing a list of page links with tags that match the page title. 
 
 That about wraps it up. I can now just create a post and push the changes to my git repo and like magic, my page is updated. 
 
