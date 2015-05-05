@@ -5,7 +5,7 @@ level: "Entry Level"
 tags: "Python"
 ---
 
-Today I will begin working on ways to solve the JuggleFest problem by Yodle in Python. The first commit I pushed can be found [here][fist_commit]. 
+Today I will begin working on ways to solve the JuggleFest problem by Yodle in Python. The first commit I pushed can be found [here][first_commit]. 
 
 This problem requires that I read in a file, line-by-line and do some work with the result. So first I need a simple way to read in a file. Python has a built in method called, open and takes a file argument and another optional argument for reading/writing. 
 
