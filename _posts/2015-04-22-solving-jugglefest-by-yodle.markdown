@@ -29,7 +29,6 @@ Now I have a way to read the file and know which section I am currently reading.
 
 The code I have started writing for this is too much to add here, so you will need to head over to my github and follow my commit history. [history][first_commit]
 
-
 In my first drawing, I compute the first preferred dot product for each juggler to look for some type of pattern in the list. I put each one of these dot products into a table - the one on top - and with it I am figuring out that the dot products are not ordered by totalling them up and putting them in order. For each circuit I computed the dot products for each juggler and then I added up each jugglers dot products. Now I put them into the first circuit that was preferred. So for example, lets say that for juggler J0, the total of her circuit dot products - 102, 31, 18 - is 151 and her first preferred circuit is 0. We would put her total score after 251 in the top right of the top table. I think this is totally wrong. I am lost and trying to find my way. I am sure you can see that if you know what I should be doing. Tomorrow I hope to make more progress that I did today.
 
 ![drawing](/img/first.jpg)
@@ -65,7 +64,6 @@ Pushed Working Solution : [commit][third_commit]
 I had a little fun with this. Instead of just showing a solution with a few simple iterations, I made a Circuit class and a Juggler class. For the circuits I just setup empty circuits with a few values for each line reading the top of the file. For jugglers it's different. Each line where I create a juggler starts off a match. Since the Juggle Fest is really a make believe competition between fictious jugglers that enter circuits with different abilities, I wrote code that lightly emulates that scene. I love games, but not so much playing them as I do planning and creating them. So the way I wrote the code is from the point of view of it being an actuall competition. Jugglers enter circuits and request premission to compete. If the circuit is empty, they just get told to sit down and stfu. If there is competition though the circuit leader sends the juggler through a series of hazes to see how well it matches up against the rest of the pack. In the end the circuit either accepts the juggler and it's abilities or it kicks it out by passing it to another circuit. Every juggler created goes through all of that and at the end we have the list. 
 
 I know I made this harder than it is, but I learn like that and I sure learned a lot here. Now I know a simple way to sort any list; never sort it. I do wonder how I may be able to know if X is > L for L in M without comparing X to every L. Maybe that will be my next post, but that's another project.  
-
 {% highlight python %}
 openCircuit()
 {% endhighlight %}
