@@ -5,7 +5,7 @@ level: "Entry Level"
 tags: "Python"
 ---
 
-Today I will begin working on ways to solve the JuggleFest problem by Yodle in Python. The first commit I pushed can be found [here][first_commit]. 
+Today I will begin working on ways to solve the JuggleFest problem by Yodle in Python. The first commit I pushed can be found [here][first_commit]
 
 This problem requires that I read in a file, line-by-line and do some work with the result. So first I need a simple way to read in a file. Python has a built in method called, open and takes a file argument and another optional argument for reading/writing. 
 
@@ -82,7 +82,7 @@ print circuits[1970].cmnt()
 
 ![drawing](/img/fifth.jpg)
 
-[first_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/ca2d8d67f69add5b03918a9473b593b17e13d4b3
-[second_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/bad7657c98af2bbc965ca556850130750b542f10
-[third_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/cd6dc4c960ae28d36b16ae84cacc7629e208b81d
-[code]: https://github.com/MrRyanAlexander/JuggleFest/blob/master/juggle.py
+[first_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/ca2d8d67f69add5b03918a9473b593b17e13d4b3/
+[second_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/bad7657c98af2bbc965ca556850130750b542f10/
+[third_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/cd6dc4c960ae28d36b16ae84cacc7629e208b81d/
+[code]: https://github.com/MrRyanAlexander/JuggleFest/blob/master/juggle.py/
