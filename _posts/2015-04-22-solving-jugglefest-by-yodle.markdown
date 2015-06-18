@@ -2,12 +2,12 @@
 title:  "Solving JuggleFest by Yodle"
 date:   2015-04-28 20:54:11
 level: "Entry Level"
-tags: "Python"
+tags: "Challenge"
 ---
 
 Today I will begin working on ways to solve the JuggleFest problem by Yodle in Python. The first commit I pushed can be found [here][first_commit]
 
-This problem requires that I read in a file, line-by-line and do some work with the result. So first I need a simple way to read in a file. Python has a built in method called, open and takes a file argument and another optional argument for reading/writing. 
+This problem requires that I read in a file, line-by-line and do some work with the result. So first I need a simple way to read in a file. Python has a built in method called, open() and takes a file argument and another optional argument for reading/writing. 
 
 {% highlight python %}
 f = open('file.txt', 'r')
@@ -78,7 +78,78 @@ print "C"+str(c.t), m.prettyPrint()+",",
 print circuits[1970].cmnt()
 {% endhighlight %}
 
+Are those duplicated; C646:100 ??
+
 ![drawing](/img/fifth.jpg)
+
+Oh and in an odd way, I know I still haven't finished this yet. For some reason, CodeEval will not fully accept this as a solution. So until this passes their test, I am not done. 
+
+I know I can do it in much less code. Here's a basic untestest solution; I think!
+
+{% highlight python %}
+
+#assume we already setup the circuits = []
+#circuit = []
+#and are testing only juggler lines
+#and have computed this jugglers dot products
+#Now the line is a list with 1 number 
+#and tuples (circuit, dot product)
+#juggler = [0, (0, 120), (2, 34), (1, 19)]
+
+#loop the jugglers preferred circuits
+for pref in juggler[1:]:
+	
+	#remember if we found a match
+	found = False
+
+	#circuit length
+	cl = len(circuits[pref[0][1:]])
+
+	#if no matches; append
+	if cl == 0:
+		circuits[pref[0]].append(juggler)
+
+	#if matches, compare
+	if cl > 0:
+
+		#loop all of the matches 1-6
+		for i, m in enumerate(circuits[pref[0][1:]]):
+			#This is the only tricky part
+			#First, I know what circuits this lines
+			#juggler prefers. I know we started
+			#checking this jugglers first preferred 
+			#circuit and if we ever skip to the next 
+			#preferred circuit because of no matches,
+			#but I need to know the value for this circuit
+			#for each juggler thats already matched, if any
+			#I could do a quick sort of the list, It is 
+			#a small list, but it's not just a list. It
+			#has tuples and it's a matrix. So I need a 
+			#simple way to find each match in the lists
+			#circuit value for this circuit.  
+			if pref[1] > 
+				circuits[pref].insert(i, juggler)
+				found = True
+				break
+
+		#if after loop or break there are too many jugglers
+		#
+		if cl > 6:
+			#there must be some recusion in here
+			#this is the point where it can happen
+			tj = circuits[pref].pop(-1)
+			#pass temp juggler; pop result
+			pass(tj)
+
+		else:
+			circuits[pref].append(juggler)
+
+
+
+
+{% endhighlight %}
+
+
 
 [first_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/ca2d8d67f69add5b03918a9473b593b17e13d4b3/
 [second_commit]: https://github.com/MrRyanAlexander/JuggleFest/commit/bad7657c98af2bbc965ca556850130750b542f10/

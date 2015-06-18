@@ -2,7 +2,7 @@
 title:  "Creating this Jeykll Site"
 date:   2015-04-22 19:54:11
 level: "Entry Level"
-tags: "Ruby, Bash, Html, CSS3"
+tags: "Web"
 ---
 I created this walkthrough of my [Jekyll powered site][mysite] while I created it. 
 

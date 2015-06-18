@@ -68,70 +68,6 @@ li {
 }
 
 /**
- * Layout Modifiers
- */
-/*
-.auto-margin {
-    margin: 0 auto;
-}
-.inline-list {
-    display: inline;
-}
-
-.left-margin-10 {
-    margin-left:10px;
-}
-.left-margin-20 {
-    margin-left:20px;
-}
-.left-margin-30 {
-    margin-left:30px;
-}
-.right-margin-10 {
-    margin-right:10px;
-}
-.right-margin-20 {
-    margin-right:20px;
-}
-.right-margin-30 {
-    margin-right:30px;
-}
-.top-border-2 {
-    border-style: solid;
-    border-top-width:2px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;;
-}
-.top-border-4 {
-    border-style: solid;
-    border-top-width:2px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;;
-}
-.top-border-8 {
-    border-style: solid;
-    border-top-width:2px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;;
-}
-.border-light-blue {
-    border-color: rgba(92, 110, 237, 0.47);
-}
-.pad-10 {
-    padding:10px;
-}
-.pad-20 {
-    padding:20px;
-}
-.pad-30 {
-    padding:30px;
-}
-*/
-
-/**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
@@ -220,7 +156,7 @@ pre {
         border-radius: 50%;
         background-color: #59A0FF;
         margin-bottom: 10px;
-        path {
+        > path {
             fill: #FFFFFF;
         }
         &:hover {
@@ -236,7 +172,7 @@ pre {
         height: 26px;
         border-radius: 50%;
         background-color: #59A0FF;
-        path {
+        > path {
             fill: #FFFFFF;
         }
         &:hover {
