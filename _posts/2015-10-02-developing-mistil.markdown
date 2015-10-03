@@ -16,7 +16,7 @@ I am sick and tired of wasting my time searching through dating profiles for a g
 
 Let's stay relevant. Let's stay current. And when we aren't looking for someone to date right now or very soon, soon as in this week, let's remove the focus from that and keep things relevant. This is why I am building the app I am calling Mistil. 
 
-Mistil is my pet project and it seeks to be the Dating App the people use to find someone now, not next week, next month or after sending out 50+ messages. Mistil is actually a social dating app. It is being designed specifically for people who are only interesting in finding dates right now or very soon. That being said, it is focused on the simplest approaches ever imagined in dating and by removing all of the traditions option barriers, it is the first social dating app of its kind. 
+Mistil is my pet project and it seeks to be the Dating App that people use to find someone now, not next week, not next month and not after sending out 50+ messages. Mistil is actually a social dating app. It is being designed specifically for people who are only interested in finding dates right now or very soon. That being said, it is focused on the simplest approaches ever imagined in dating and by removing all of the traditional option barriers, it is the first social dating app. 
 
 No browsing
 No messaging
