@@ -2,4 +2,5 @@
 .sass_cache
 /_drafts
 /_site
+/parse
 Gemfile.lock

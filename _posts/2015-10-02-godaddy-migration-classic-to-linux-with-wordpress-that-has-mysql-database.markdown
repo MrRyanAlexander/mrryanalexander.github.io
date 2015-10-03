@@ -1,0 +1,22 @@
+---
+title:  "GoDaddy Migration - Classic to Linux with Wordpress that has MySql Databse"
+date:   2015-10-02 19:54:11
+level: "Advanced Level"
+tags: "Web"
+---
+
+I needed to migrate an existing site on GoDaddy, which was also running a Wordpress app that had a MySql Database. Let me start off by saying, paying for a Wordpress Hosted site through GoDaddy WILL help save you a bunch of time or money, if you have to hire a webmaster to do the migration for you. 
+
+GoDaddy has a wonderful New Linux interface that makes it comfortable to navigate and it is packed with many of the options that were lacking in the older Classic and Delux Legacy packages. Today, if you pay for a Wordpress Hosted Site, future upgrades will be a series of educated clicks. However, if you don't, you could end up in a situation like what I am about to describe; maybe you are even in this situation right now. Keep reading...
+
+When you install Wordpress on your Classic or Deluxe GoDaddy site, you will be asked to create a MySql Database; this is where your posts and comments are stored. When you get ready to update you Legacy, aka "Ancient" setup, you will need to start off by backing up and downloading the MySql Database. I will not be explaining where to click inside of you account/hosting window; I expect that you know how to do that already. Now, after you are finished backing up your Database, you will need to either SSH into you shared server or install and setup and FTP client like Filezilla. Again, I am not going to explain how to SSH or setup Filezilla, I expect you to know how to do that already. Once you have gained access to your shared server files you need to download everything in your root or subfolder. Once you have a copy of your files, you are ready to begin uploading them to your new Linux shared server. This is where things are going to get interesting, so proceed carefully and slowly. 
+
+You should have all the files in 3 places now. One on your old legacy shared host, one on your local machine and one on you new Linux shared host. Now there are two different paths. A, you are restoring for the main default domain, the one your Linux shared host has you registered at. Hint: you should see the default domain on the page somewhere at the top. Your files go into the main public_html folder "/". B, you are restoring for an Add-On domain. Your files go into the main public_html folder, inside of the folder you created or need to create for this Add-On domain "add-on-files-folder". Copy all of the files from your local machine into the remote directory. Once you are done with that, you need to find the files on your machine inside of _db_backups. You should have given the Datebase a name that is easy to remember, if you let GoDaddy create it for you and you have more than one, have fun figuring out which one is right. You will btw, just try. Copy the correct Databse file ending with .sql into your remote directy named, _db_backups and create that first if one doesn't already exist. 
+
+Once you have the Databse create, open your config.php file and change the DB_NAME, DB_USER, DB_PASSWORD to whatever you just created and lost, if DB_HOST says anything other than "localhost", change it to that. Save the file and sync it to your remote linux shared host. 
+
+Now open you PHPMyAdmin and go to your new Database. Upload the file from inside of _db_backups for this Database. You could have done this step before the last, but I just did it in this order. 
+
+Now your wordpress site files should all be on your new linux shared host in the correct folders. You should have edited the config.php file to match your new Database settings and the last two steps are to change the site_url and the password for Wordpress, but change the site_url first. Remember, I did this for testing purposes; don't change this unless you're testing things out fist or else your site might show up, but all the links will be broken and /admin login will redirect you to the test url. If you are changing to a new url, you do what I did for testing.
+
+Now your site should be up. This is where I had to change my Wordpress password. Everything was working perfect, except I couldn't login as admin. Changing the password solved the issue. Oh and if you forgot the username and email address, just look nearby where you were able to change the site_url inside of PHPMyAdmin for the Database you created earlier. 
